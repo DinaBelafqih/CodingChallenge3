@@ -73,3 +73,20 @@ let feedback = [
   
   // Log the entire feedback list to the console
   console.log(feedback);
+
+  // Task 5: Inventory Management System
+// Declare an object inventory with properties: itemName, stockCount, and price
+let inventory = {
+    itemName: "Laptop",
+    stockCount: 50,
+    price: 1000,
+    
+    // Add a method calculateTotalValue that returns the total value (stockCount * price)
+    calculateTotalValue: function() {
+      return this.stockCount * this.price;
+    }
+  };
+  
+  // Log the inventory details and total value to the console
+  console.log(inventory);
+  console.log("Total Value: $" + inventory.calculateTotalValue());
