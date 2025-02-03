@@ -42,3 +42,34 @@ let employee = {
   
   // Log the updated employee object to the console
   console.log(employee);
+
+    // Task 4: Customer Feedback 
+    let orders = [5, 10, 15, 20, 25];
+orders[2] += 5;
+let totalOrders = orders.reduce((total, order) => total + order, 0);
+console.log(orders);
+console.log(totalOrders);
+
+let employee = {
+  name: "Emma Johnson",
+  role: "Developer",
+  performanceScore: 85,
+  isActive: true
+};
+employee.performanceScore = 90;
+employee.promotionEligible = true;
+console.log(employee);
+
+// Task 4: Customer Feedback Records
+// Declare an array feedback containing at least three objects, each with properties: customerName, feedbackText, and rating
+let feedback = [
+    { customerName: "Alice", feedbackText: "Great service!", rating: 5 },
+    { customerName: "Bob", feedbackText: "Good quality.", rating: 4 },
+    { customerName: "Charlie", feedbackText: "Satisfactory experience.", rating: 3 }
+  ];
+  
+  // Add a new feedback object to the array
+  feedback.push({ customerName: "David", feedbackText: "Could be better.", rating: 2 });
+  
+  // Log the entire feedback list to the console
+  console.log(feedback);
